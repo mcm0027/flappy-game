@@ -4,8 +4,8 @@ var Bird = function() {
   console.log("Creating Bird entity");
   
   var graphics = new graphicsComponent.BirdGraphicsComponent(this);
-  this.compnents = {
-    graphics: graphics;
+  this.components = {
+    graphics: graphics
     
   };
 };
