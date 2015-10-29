@@ -12,6 +12,7 @@ BirdGraphicsComponent.prototype.draw = function(context) {
     context.fill();
     context.closePath();
     context.restore();
+  
 };
 
 exports.BirdGraphicsComponent = BirdGraphicsComponent;

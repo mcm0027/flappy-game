@@ -24,13 +24,18 @@ gulp.task('html', function() {
     .pipe(gulp.dest('build/'));
 });
 
+
+
 // JavaScript build task, removes whitespace and concatenates all files
 gulp.task('scripts', function() {
   return browserify('./js/main.js')
     .bundle()
     .pipe(source('app.js'))
     .pipe(buffer())
-    .pipe(uglify())
     .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('watch', function() {
+  gulp.watch('./js/*.js', ['scripts']);
 });
 

@@ -3,7 +3,25 @@ var PipeGraphicsComponent = function(entity) {
 };
 
 PipeGraphicsComponent.prototype.draw = function(context) {
-  console.log("Draw a pipe.")
+    var position = this.entity.components.physics.position;
+  
+ 
+  context.save();
+  context.translate(position.x, position.y);
+  context.beginPath();
+  context.rect(1.2,.2, .1, .5);
+  context.fill();
+  context.closePath();
+  context.restore();
+  
+  context.save();
+  context.translate(position.x, position.y);
+  context.beginPath();
+  context.rect(1.2, -.2, .1, -.5);
+  context.fill();
+  context.closePath();
+  context.restore();
+
 };
 
 exports.PipeGraphicsComponent = PipeGraphicsComponent;
