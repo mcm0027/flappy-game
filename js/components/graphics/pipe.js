@@ -2,6 +2,8 @@ var PipeGraphicsComponent = function(entity) {
   this.entity = entity;
 };
 
+
+
 PipeGraphicsComponent.prototype.draw = function(context) {
     var position = this.entity.components.physics.position;
   
