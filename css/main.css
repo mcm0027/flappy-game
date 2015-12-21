@@ -4,7 +4,29 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: #666;
+}
+
 canvas#main-canvas {
   width: 100%;
-  height: 100%;
+  height: 500px;
+  background: rgba(67,157,163,1);
+  background: -moz-linear-gradient(top, rgba(67,157,163,1) 0%, rgba(126,136,186,0.95) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(67,157,163,1)), color-stop(100%, rgba(126,136,186,0.95)));
+  background: -webkit-linear-gradient(top, rgba(67,157,163,1) 0%, rgba(126,136,186,0.95) 100%);
+  background: -o-linear-gradient(top, rgba(67,157,163,1) 0%, rgba(126,136,186,0.95) 100%);
+  background: -ms-linear-gradient(top, rgba(67,157,163,1) 0%, rgba(126,136,186,0.95) 100%);
+  background: linear-gradient(to bottom, rgba(67,157,163,1) 0%, rgba(126,136,186,0.95) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#439da3', endColorstr='#7e88ba', GradientType=0 );
+  margin: 0;
+  border-bottom: 2px solid #999;
+}
+
+.heading {
+  padding:2em 0;
+  margin: 0 auto;
+  background-color: #666;
+  color: #eee;
+  text-align: center;
 }
